@@ -1,0 +1,8 @@
+From: Dana Whitfield <dana.whitfield@northwind.example>
+Subject: refund never arrived
+
+Hi, my order from 2026-10-28 was paid with card 4539 1488 0343 6467.
+The refund still hasn't arrived. My phone is +44 20 7946 0958 and my
+personal email is d.whitfield@personal.example. If you need to post
+anything, I'm at 12 Elm Grove, Manchester M20 4AB. Date of birth on
+file is 1979-04-02. Thanks.
