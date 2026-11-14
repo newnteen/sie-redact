@@ -15,6 +15,12 @@ model anywhere in the path.
 | Safe / unsafe verdict | `fastino/gliguard-LLMGuardrails-300M` | `/v1/extract` |
 | Detect and mask PII | `urchade/gliner_multi_pii-v1` | `/v1/extract` |
 
+## Why SIE
+
+Both steps are task models behind one API — no frontier model in the path. The same
+code runs against SIE Serverless or a self-hosted SIE Cluster, which is the point:
+the text cannot leave the network.
+
 ## Setup
 
 ```bash
@@ -67,6 +73,8 @@ This is [NAME], reach me at [EMAIL]. I know where you live and I will make you p
   entity types (the extractor is zero-shot) by extending `PII_LABELS`.
 - Overlapping spans are collapsed: the first span wins and the rest of the text
   keeps its original characters.
+- This is a runnable starting point: extend `PII_LABELS` for more entity types and
+  point `SIE_BASE_URL` at your own cluster when the volume justifies it.
 
 ## License
 
